@@ -4,10 +4,10 @@ import pickle
 app = Flask(__name__)
 
 # Load movie data
-with open('artifacts/movies.pkl', 'rb') as f:
+with open('movies.pkl', 'rb') as f:
     movies = pickle.load(f)
 
-with open('artifacts/similarity.pkl', 'rb') as f:
+with open('similarity.pkl', 'rb') as f:
     similarity = pickle.load(f)
 
 @app.route('/')
